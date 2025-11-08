@@ -13,7 +13,7 @@ body.dark-mode {
   color: var(--text-color);
 }
 
-body.dark-mode {
+.dark-mode {
   background: var(--background);
   color: var(--text-color);
 }
