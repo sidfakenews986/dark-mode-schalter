@@ -16,11 +16,7 @@ class DarkMode {
   }
 
   loadTheme() {
-    if (this.isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
     this.saveThemePreference();
   }
 
