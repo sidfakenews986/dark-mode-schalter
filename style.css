@@ -3,7 +3,12 @@ body {
   --text-color: #000000;
 }
 
-dark-mode body {
+dark-mode {
   --background: #000000;
   --text-color: #ffffff;
+}
+
+body.dark-mode {
+  background: var(--background);
+  color: var(--text-color);
 }
