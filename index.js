@@ -36,6 +36,7 @@ class DarkMode {
     toggleButton.addEventListener('click', () => this.toggle());
     toggleButton.addEventListener('keypress', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
         this.toggle();
       }
     });
