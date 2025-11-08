@@ -40,8 +40,8 @@ class DarkMode {
         this.toggle();
       }
     });
-    toggleButton.addEventListener('focus', () => toggleButton.classList.add('focus'));  // Add focus indication
-    toggleButton.addEventListener('blur', () => toggleButton.classList.remove('focus')); // Remove focus indication
+    toggleButton.addEventListener('focus', () => toggleButton.classList.add('focus'));
+    toggleButton.addEventListener('blur', () => toggleButton.classList.remove('focus'));
     document.body.appendChild(toggleButton);
   }
 }
