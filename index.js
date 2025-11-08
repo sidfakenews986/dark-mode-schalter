@@ -34,6 +34,11 @@ class DarkMode {
     toggleButton.innerText = 'Toggle Dark Mode';
     toggleButton.setAttribute('aria-label', 'Toggle Dark Mode');
     toggleButton.addEventListener('click', () => this.toggle());
+    toggleButton.addEventListener('keypress', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        this.toggle();
+      }
+    });
     document.body.appendChild(toggleButton);
   }
 }
