@@ -12,8 +12,3 @@ body.dark-mode {
   background: var(--background);
   color: var(--text-color);
 }
-
-body.dark-mode {
-  background-color: var(--background);
-  color: var(--text-color);
-}
