@@ -32,6 +32,7 @@ class DarkMode {
   addToggleListener() {
     const toggleButton = document.createElement('button');
     toggleButton.innerText = 'Toggle Dark Mode';
+    toggleButton.setAttribute('aria-label', 'Toggle Dark Mode');
     toggleButton.addEventListener('click', () => this.toggle());
     document.body.appendChild(toggleButton);
   }
