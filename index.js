@@ -5,9 +5,11 @@ class DarkMode {
   }
 
   init() {
-    this.detectSystemTheme();
-    this.loadTheme();
-    this.addToggleListener();
+    document.addEventListener('DOMContentLoaded', () => {
+      this.detectSystemTheme();
+      this.loadTheme();
+      this.addToggleListener();
+    });
   }
 
   detectSystemTheme() {
